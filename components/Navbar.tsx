@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='fixed left-0 top-0 w-full z-30'>
             <nav className='max-w-[1240px] m-auto flex justify-between items-center'>
                 <Link href='/'>
-                    <h1 className='font-bold text-4xl'>Captur</h1>
+                    <h1 className='font-bold text-4xl'>Felipe</h1>
                 </Link>
                 <ul className='flex'>
                     <li className='p-4 font-bold hover:text-gray-500'>
