@@ -38,7 +38,7 @@ const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ text }) => {
     return (
         <div className='w-full mx-auto flex items-center justify-center overflow-hidden'>
             <motion.h1
-                className='inline-block w-full text-slate-700 font-extrabold text-2xl lg:text-3xl'
+                className='inline-block w-full text-slate-700 font-extrabold text-lg md:text-2xl lg:text-3xl'
                 variants={texto}
                 initial='initial'
                 animate='animate'

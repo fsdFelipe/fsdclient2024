@@ -8,13 +8,14 @@ import {
 import { motion } from 'framer-motion'
 import AnimatedTitle from './animations/AnimatedTitle';
 import Link from 'next/link';
+import DrawImg from './animations/DrawImg';
 
 const Hero: React.FC = () => {
     return (
-        <section className='w-full bg-blue-300 min-h-screen mt-16 lg:mt-0 items-center justify-center lg:p-12'>
-            <div className='w-full lg:flex items-center justify-center text-white border-[1px] border-red-500'>
-                <div className='w-full flex-col lg:w-1/2 p-8 items-center justify-center border-[1px] border-emerald-400'>
-                    <div className='p-2 text-white'>
+        <section className='w-full bg-blue-300 min-h-[40vh] mt-16 lg:mt-0 items-center justify-center lg:p-12'>
+            <div className='w-full lg:flex items-center justify-center text-white p-8'>
+                <div className='w-full flex-col h-full p-4 lg:w-1/2 items-center justify-center'>
+                    <div className='text-white'>
                         <AnimatedTitle text="Bem Vindo !!!" />
                         <motion.p
                             initial={{ opacity: 0 }}
@@ -25,7 +26,7 @@ const Hero: React.FC = () => {
                                 },
                             }
                             }
-                            className='py-5 text-2xl'
+                            className='py-5 text-xl'
                         >Conheça minha caminhada para ser um desenvolvedor web
                         </motion.p>
                         <motion.button
@@ -38,7 +39,7 @@ const Hero: React.FC = () => {
                                 },
                             }
                             }
-                            className='px-8 py-2 border hover:border-red-600'>
+                            className='px-8 py-2 my-4 border hover:border-red-600'>
                             <Link href='pages/contato'>Contato</Link>
                         </motion.button>
                     </div>
@@ -93,11 +94,8 @@ const Hero: React.FC = () => {
                         </motion.a>
                     </div>
                 </div>
-                <div className='w-full lg:w-1/2 flex items-center justify-center border-[1px] border-yellow-400 p-8'>
-                    <Image src='/images/Logo.png'
-                        alt='Felipe Dias'
-                        width={520}
-                        height={460} />
+                <div className='w-full lg:w-1/2  flex items-start justify-center'>
+                    <DrawImg />
                 </div>
             </div>
         </section>
