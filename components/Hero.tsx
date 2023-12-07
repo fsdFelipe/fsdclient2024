@@ -11,7 +11,7 @@ import DrawImg from './animations/DrawImg';
 
 const Hero: React.FC = () => {
     return (
-        <section className='w-full bg-blue-300 min-h-[40vh] items-center justify-center'>
+        <section className='w-full bg-blue-300 min-h-[80vh] flex items-center justify-center mb-2 md:px-20'>
             <div className='w-full lg:flex items-center justify-center text-white p-8'>
                 <div className='w-full flex-col h-full p-0 sm:p-8 lg:w-1/2 items-center justify-center'>
                     <div className='text-white'>

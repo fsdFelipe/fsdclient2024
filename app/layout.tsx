@@ -17,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='w-full flex justify-center items-center flex-col mx-auto sm:px-16 px-2'>
+      <body >
         <Navbar />
-        {children}
+        <main className='w-full min-h-screen flex justify-center items-center flex-col mx-auto p-1'>
+          {children}
+        </main>
       </body>
     </html>
   )

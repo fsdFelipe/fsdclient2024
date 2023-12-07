@@ -14,12 +14,12 @@ const Navbar = () => {
 
     return (
         <div className='fixed left-0 top-0 w-full z-30 easy-in duration-300 bg-gray-800/70'>
-            <nav className='flex m-auto justify-between items-center py-4 xl:px-32 px-6 text-white'>
+            <nav className='flex h-16 m-auto justify-between items-center py-4 md:px-36 px-6 text-white'>
                 <Link href='/' className='flex items-center justify-center z-10'>
                     <Image src={LOGOF} alt='Felipe' width={35} height={10} />
                     <h3 className='-ml-3.5 mt-1'>elipe</h3>
                 </Link>
-                <ul className='hidden sm:flex'>
+                <ul className='hidden md:flex'>
                     <li className='p-4 font-bold hover:text-gray-500'>
                         <Link href='/'>Home</Link>
                     </li>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </ul>
 
                 {/** Botão Mobile */}
-                <div onClick={handleNav} className='block sm:hidden z-10'>
+                <div onClick={handleNav} className='block md:hidden z-10'>
                     {nav ? (
                         <AiOutlineClose size={20} />
                     ) : (
