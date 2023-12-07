@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const DrawImg = () => {
     return (
-        <div className='flex h-[380px] mt-0 items-center justify-center'>
+        <div className='flex h-[420px] mt-0 items-center justify-center'>
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"

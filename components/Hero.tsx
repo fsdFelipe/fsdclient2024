@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
 import {
     FaFacebookSquare, FaInstagramSquare, FaTwitterSquare,
@@ -12,9 +11,9 @@ import DrawImg from './animations/DrawImg';
 
 const Hero: React.FC = () => {
     return (
-        <section className='w-full bg-blue-300 min-h-[40vh] mt-16 lg:mt-0 items-center justify-center lg:p-12'>
+        <section className='w-full bg-blue-300 min-h-[40vh] items-center justify-center'>
             <div className='w-full lg:flex items-center justify-center text-white p-8'>
-                <div className='w-full flex-col h-full p-4 lg:w-1/2 items-center justify-center'>
+                <div className='w-full flex-col h-full p-0 sm:p-8 lg:w-1/2 items-center justify-center'>
                     <div className='text-white'>
                         <AnimatedTitle text="Bem Vindo !!!" />
                         <motion.p
@@ -43,7 +42,7 @@ const Hero: React.FC = () => {
                             <Link href='pages/contato'>Contato</Link>
                         </motion.button>
                     </div>
-                    <div className='w-full xl:w-4/5 mx-auto hidden lg:flex items-center justify-between p-6'>
+                    <div className='w-full lg:w-4/5 hidden lg:flex items-center justify-between p-0 sm:p-8'>
                         <motion.a
                             href='https://www.facebook.com/profile.php?id=61553821538443'
                             target={'_blank'}
@@ -94,7 +93,7 @@ const Hero: React.FC = () => {
                         </motion.a>
                     </div>
                 </div>
-                <div className='w-full lg:w-1/2  flex items-start justify-center'>
+                <div className='w-full lg:w-1/2 flex items-start justify-center lg:justify-end'>
                     <DrawImg />
                 </div>
             </div>
